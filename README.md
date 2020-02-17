@@ -1,9 +1,10 @@
 # Human Activity Recognition
 
-<img src = https://github.com/yatscool007/Human-Activity-Detection-/blob/master/Images'/1_9L__QC49eKx-MtwFw4f8Mg.png>
+
+<img src = https://github.com/yatscool007/Human-Activity-Detection-/blob/master/Images'/res1.PNG>
 
 
-<br>
+
 
 
 This project is to build a model that predicts the human activities such as Walking, Walking_Upstairs, Walking_Downstairs, Sitting, Standing or Laying.
