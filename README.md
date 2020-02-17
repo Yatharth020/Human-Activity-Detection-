@@ -1,7 +1,7 @@
 # Human Activity Recognition
 
 
-<img src = https://github.com/yatscool007/Human-Activity-Detection-/blob/master/Images'/res1.PNG>
+<img src = https://github.com/yatscool007/Human-Activity-Detection-/blob/master/Images/1_9L__QC49eKx-MtwFw4f8Mg.png>
 
 
 
@@ -68,8 +68,11 @@ By using the sensors(Gyroscope and accelerometer) in a smartphone, they have cap
 
     - In static activities (sit, stand, lie down) motion information will not be very useful.
 	- In the dynamic activities (Walking, WalkingUpstairs,WalkingDownstairs) motion info will be significant.
+<img src = https://github.com/yatscool007/Human-Activity-Detection-/blob/master/Images/fe.PNG>
 
 __Applying TSNE to visualize in 2-D__:
+
+<img src = https://github.com/yatscool007/Human-Activity-Detection-/blob/master/Images/t-sne_perp_2_iter_1000.png>
 
 
 
@@ -84,27 +87,51 @@ __Modelling__:
 - Gradient Boosted Decision Trees
 __Results of ML models__:
 
+<img src = https://github.com/yatscool007/Human-Activity-Detection-/blob/master/Images/ml_results.PNG>
+
 
 ### Deep Learning models:
-__Model 1:  LSTM(32) + Batchnormalization + Dropout(0.3) + RmsProp__ -
+__Model 1:  LSTM(120) + Batchnormalization + Dropout(0.3) + RmsProp__ -
 
-__Model 2:  LSTM(80 cells) + LSTM (35 cells) + Dropout(0.4) +Dropout(0.2) + 1 BatchNormalization layers + Adam Optimizer__ -
+<img src = https://github.com/yatscool007/Human-Activity-Detection-/blob/master/Images/arc1.PNG>
+
+<img src = https://github.com/yatscool007/Human-Activity-Detection-/blob/master/Images/graph1.PNG>
+
+__Model 2:  LSTM(80 cells) + LSTM (35 cells) + Dropout(0.3) +Dropout(0.5) + 1 BatchNormalization layers + Adam Optimizer__ -
+
+<img src = https://github.com/yatscool007/Human-Activity-Detection-/blob/master/Images/arc2.PNG>
+
+<img src = https://github.com/yatscool007/Human-Activity-Detection-/blob/master/Images/grph2.PNG>
 
 __Model 3:  Conv1d(64) +Conv1d(48) +Maxpooling(2) + Batchnormalization + Dropout(0.5) +Dense(100)__ - 
 
+<img src = https://github.com/yatscool007/Human-Activity-Detection-/blob/master/Images/arc3.PNG>
+
+<img src = https://github.com/yatscool007/Human-Activity-Detection-/blob/master/Images/grph3.PNG>
+
 __Model 4:  LSTM(100) + Dropout(0.7) + LSTM(50) + Dropout(0.7) + RmsProp__ - 
 
+<img src = https://github.com/yatscool007/Human-Activity-Detection-/blob/master/Images/graph4.PNG>
+
 ## Results
+<img src = https://github.com/yatscool007/Human-Activity-Detection-/blob/master/Images/res1.PNG>
 
 
-## Improving the results:
+## Improving the results(Divide and Conquer Approach):
 link - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5949027/
 
+<img src = https://github.com/yatscool007/Human-Activity-Detection-/blob/master/Images/dc.PNG>
 As to improve the results and achieve a better accuracy on test data ,I have referred to this research paper and tried to implement the Divide and Conquer Approach in which we perform:
+
 - Two class classification of static and dynamic activities
-- Separately classifying static and Dynamic activities as 3 class classification problem 
+
+- Separately classifying static and Dynamic activities as 3 class classification problem
+
 - Stacking the model to get final output
 
-__Results after Divide and Conquer approach_:
+
+### Results after Divide and Conquer approach:
+
+<img src = https://github.com/yatscool007/Human-Activity-Detection-/blob/master/Images/final.PNG>
 
 
